@@ -1,249 +1,199 @@
-<!DOCTYPE html> 
-<html lang="en">  
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Sprunki Warm Like Fire - An Enchanting Adventure Game</title> 
-    <meta name="description" content="Play Sprunki Warm Like Fire, an enchanting adventure where you navigate through fiery challenges. Experience this captivating online game for free at ZekaGames."> 
-    <link rel="canonical" href="https://zekagames.org/sprunki-warm-like-fire">  
-    <meta name="keywords" content="Sprunki Warm Like Fire, online games, adventure games, fire games, ZekaGames">
-    <script src="https://cdn.tailwindcss.com"></script>    
-    <script>
-        tailwind.config   = {
-            theme: { 
-                extend: {  
-                    colors: {
-                        apple: { 
-                            blue: '#007AFF',
-                            red: '#FF3B30', 
-                            green: '#34C759',
-                            purple: '#AF52DE',
-                            yellow: '#FFCC00',
-                            orange: '#FF9500', 
-                            dark: '#1C1C1E', 
-                            gray: '#8E8E93',
-                            lightgray: '#F2F2F7' 
-                        } 
-                    } 
-                } 
-            } 
-        } 
-    </script> 
-    <style type="text/css">
-        @media (max-width: 640px) { 
-            .game-container { 
-                height: 70vh; 
-            } 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Sprunki Retake online for free! Experience the innovative horror-themed music creation game with unique sound mixing, multiple game phases, and join our thriving community. No download required.">
+    <meta name="keywords" content="Sprunki Retake, horror game, music creation, online game, browser game, free game">
+    <meta property="og:title" content="Sprunki Retake - Play Free Online Music Creation Game | ZekaGames">
+    <meta property="og:description" content="Create unique horror-themed music in your browser with Sprunki Retake. Mix beats, craft melodies, and join our creative community today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zekagames.org">
+    <title>Sprunki Retake - Play Free Online Music Creation Game | ZekaGames</title>
+    <link rel="canonical" href="https://zekagames.org" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-green: #34C759;
+            --apple-dark: #1D1D1F;
+            --apple-light: #F5F5F7;
         }
-        /* Adjust iframe style to match GitHub example */ 
-        .game-iframe { 
-            width: 100%;
-            height: 100%;
-            border: 0;
-            overflow: hidden; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--apple-light);
+            color: var(--apple-dark);
         }
-        /* Adjust game container dimensions */ 
-        .game-container { 
-            width: 100%;
-            height: 600px; /* Fixed height, consistent with GitHub example */ 
-            max-width: 800px; /* Maximum width limit */ 
-            margin: 0 auto; /* Center display */ 
-        } 
-    </style> 
-</head> 
-<body class="bg-apple-lightgray text-apple-dark">
-    <header class="bg-gradient-to-r from-apple-orange to-apple-red text-white p-4 md:p-6 shadow-md"> 
-        <div class="container mx-auto"> 
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-center md:text-left mb-4 md:mb-0">
-                    <h1 class="text-3xl md:text-4xl font-bold">Sprunki Warm Like Fire</h1> 
-                    <p class="text-lg mt-2">An enchanting adventure through a world of flames!</p>
-                </div> 
-                <nav> 
-                    <ul class="flex space-x-4">
-                        <li><a href="#game" class="hover:text-apple-yellow transition-colors">Play Now</a></li>
-                        <li><a href="#about" class="hover:text-apple-yellow transition-colors">About</a></li> 
-                        <li><a href="#how-to-play" class="hover:text-apple-yellow transition-colors">How to Play</a></li>
-                        <li><a href="#more-games" class="hover:text-apple-yellow transition-colors">More Games</a></li>
-                    </ul> 
-                </nav> 
+    </style>
+</head>
+<body>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Sprunki Retake
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Experience the unique blend of horror and music creation in this innovative browser-based game. Create haunting melodies, mix eerie beats, and join our creative community.
+            </p>
+        </header>
+
+        <!-- Game Section -->
+        <section class="mb-16 relative">
+            <div class="w-full aspect-[16/9] bg-black rounded-2xl overflow-hidden shadow-2xl relative">
+                <iframe 
+                    src="https://wowtbc.net/sprunkin/retake/index.html"
+                    class="w-full h-full border-0"
+                    allowfullscreen
+                    loading="lazy"
+                    title="Play Sprunki Retake Online">
+                </iframe>
+                <div class="absolute bottom-0 left-0 right-0 h-12 bg-gray-900 z-10"></div>
             </div>
-        </div> 
-    </header> 
-  
-    <main class="container mx-auto p-4 md:p-6">
-        <section id="game" class="my-8"> 
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-apple-blue">Play Sprunki Warm Like Fire</h2> 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden"> 
-                <!-- Modified game container class, removed h-screen and max-h properties -->
-                <div class="game-container"> 
-                    <!-- Modified iframe with parameter controls -->
-                    <iframe  
-                        src="https://wowtbc.net/sprunkin/retake/index.html"    
-                        class="game-iframe"
-                        frameborder="0" 
-                        scrolling="no" 
-                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms" 
-                        allowfullscreen 
-                        loading="lazy" 
-                        title="Sprunki Warm Like Fire Game"> 
-                    </iframe>
-                </div> 
-            </div> 
-              
-            <div class="flex justify-center space-x-4 mt-6">
-                <button class="bg-apple-blue hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition shadow-md" onclick="makeFullscreen()"> 
-                    Fullscreen 
-                </button> 
-                <button class="bg-apple-green hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition shadow-md"> 
-                    Share Game 
-                </button>
-                <button class="bg-apple-orange hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition shadow-md">  
-                    Favorite 
-                </button>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                    Immersive Horror Theme
+                </h2>
+                <p class="text-gray-700">
+                    Dive into a unique atmosphere where horror meets creativity. Create spine-chilling soundtracks and explore dark musical territories.
+                </p>
             </div>
-        </section> 
-         
-        <section id="about" class="my-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-apple-blue">About Sprunki Warm Like Fire</h2>
-            <div class="bg-white rounded-lg shadow-lg p-6"> 
-                <p class="mb-4">Sprunki Warm Like Fire is an enchanting adventure game that takes players through a world where fire is not just an element, but a companion. Navigate through challenging levels, solve puzzles, and harness the power of flames to progress in this visually stunning experience.</p> 
-                <p>With intuitive controls and progressive difficulty, this game offers hours of engaging gameplay suitable for players of all ages. The unique art style combines warm color palettes with dynamic lighting effects to create an immersive atmosphere.</p> 
-            </div> 
-        </section> 
-  
-        <section id="how-to-play" class="my-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-apple-blue">How to Play</h2> 
-            <div class="bg-white rounded-lg shadow-lg p-6"> 
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>Use arrow keys or WASD to move Sprunki through the levels</li>
-                    <li>Press Space to jump over obstacles</li> 
-                    <li>Collect fire orbs to increase your warmth meter</li> 
-                    <li>Avoid water puddles and ice blocks that reduce your warmth</li>
-                    <li>Complete each level by reaching the flame portal</li>
-                </ul> 
-            </div> 
-        </section> 
-        
-        <section id="more-games" class="my-12"> 
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue">More Games</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <a href="#" class="block group"> 
-                    <div class="bg-apple-dark rounded-lg overflow-hidden shadow-md aspect-square flex items-center justify-center group-hover:shadow-lg transition"> 
-                        <div class="text-white text-center p-4">Monster Survivors</div> 
-                    </div> 
-                    <h3 class="mt-2 font-medium text-center group-hover:text-apple-blue transition">Monster Survivors</h3> 
-                </a>
-                <a href="#" class="block group">
-                    <div class="bg-apple-dark rounded-lg overflow-hidden shadow-md aspect-square flex items-center justify-center group-hover:shadow-lg transition">
-                        <div class="text-white text-center p-4">Wordle</div> 
-                    </div> 
-                    <h3 class="mt-2 font-medium text-center group-hover:text-apple-blue transition">Wordle Unlimited</h3> 
-                </a>
-                <a href="#" class="block group">
-                    <div class="bg-apple-dark rounded-lg overflow-hidden shadow-md aspect-square flex items-center justify-center group-hover:shadow-lg transition">
-                        <div class="text-white text-center p-4">2048</div> 
-                    </div> 
-                    <h3 class="mt-2 font-medium text-center group-hover:text-apple-blue transition">2048 Game</h3> 
-                </a>
-                <a href="#" class="block group">
-                    <div class="bg-apple-dark rounded-lg overflow-hidden shadow-md aspect-square flex items-center justify-center group-hover:shadow-lg transition">
-                        <div class="text-white text-center p-4">Solitaire</div> 
-                    </div> 
-                    <h3 class="mt-2 font-medium text-center group-hover:text-apple-blue transition">Solitaire Game</h3> 
-                </a>
-            </div> 
-        </section> 
-    </main> 
-  
-    <footer class="bg-apple-dark text-white py-8 px-4"> 
-        <div class="container mx-auto"> 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div> 
-                    <h3 class="text-xl font-bold mb-4">ZekaGames</h3> 
-                    <p class="text-apple-gray">Your destination for high-quality online games that are free to play and optimized for all devices.</p> 
-                </div>
-                <div> 
-                    <h3 class="text-lg font-bold mb-4">Categories</h3> 
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Adventure</a></li>
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Puzzle</a></li> 
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Action</a></li> 
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Strategy</a></li>
-                    </ul> 
-                </div> 
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                    Multiple Game Phases
+                </h2>
+                <p class="text-gray-700">
+                    Progress through different phases, each offering unique sounds and visual themes. Unlock new content as you master the game.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                    Community Creation
+                </h2>
+                <p class="text-gray-700">
+                    Share your creations, get inspired by others, and participate in regular community events and challenges.
+                </p>
+            </div>
+        </section>
+
+        <!-- How to Play -->
+        <section class="bg-white rounded-2xl p-8 mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                How to Play
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3> 
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Contact</a></li> 
-                    </ul> 
-                </div> 
-            </div> 
-            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-apple-gray"> 
-                <p>&copy; 2025 ZekaGames. All rights reserved.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Getting Started</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>• No download required - play instantly in your browser</li>
+                        <li>• Intuitive drag-and-drop interface</li>
+                        <li>• Create unique horror-themed music</li>
+                        <li>• Save and share your creations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Advanced Features</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>• Mix different sound elements</li>
+                        <li>• Unlock special characters and effects</li>
+                        <li>• Participate in community challenges</li>
+                        <li>• Create custom sound patterns</li>
+                    </ul>
+                </div>
             </div>
-        </div> 
-    </footer> 
-  
-    <script>
-        // Simple fullscreen function 
-        function makeFullscreen() { 
-            const gameContainer = document.querySelector('.game-container');  
-            const iframe = gameContainer.querySelector('iframe');    
-            
-            if (iframe) { 
-                if (iframe.requestFullscreen)   { 
-                    iframe.requestFullscreen();   
-                } else if (iframe.mozRequestFullScreen)   { // Firefox 
-                    iframe.mozRequestFullScreen();    
-                } else if (iframe.webkitRequestFullscreen)   { // Chrome, Safari & Opera
-                    iframe.webkitRequestFullscreen();  
-                } else if (iframe.msRequestFullscreen)   { // IE/Edge
-                    iframe.msRequestFullscreen();   
-                } 
-            } 
-        }
-         
-        // Add handling for iframe load completion 
-        document.addEventListener('DOMContentLoaded',  function() { 
-            const iframe = document.querySelector('.game-iframe'); 
-            iframe.onload  = function() { 
-                // You can add processing logic here after the iframe loads 
-                console.log('Game  iframe loaded successfully'); 
-                 
-                // Try to adjust iframe content 
-                try {
-                    // This part of the code may fail due to cross-origin restrictions 
-                    const iframeDocument = iframe.contentDocument  || iframe.contentWindow.document; 
-                    // Here you can try to hide unwanted elements in the iframe
-                } catch (e) {
-                    console.log('Cannot  access iframe content due to same-origin policy'); 
-                } 
-            };
-        });
-    </script> 
-  
-    <!-- JSON-LD structured data for SEO --> 
-    <script type="application/ld+json"> 
-    {
-        "@context": "https://schema.org",  
-        "@type": "VideoGame", 
-        "name": "Sprunki Warm Like Fire",
-        "description": "An enchanting adventure game that takes players through a world where fire is not just an element, but a companion.", 
-        "genre": ["Adventure", "Puzzle", "Action"],
-        "playMode": "SinglePlayer",
-        "applicationCategory": "Game", 
-        "url": "https://zekagames.org/sprunki-warm-like-fire",    
-        "offers": {
-            "@type": "Offer", 
-            "price": "0", 
-            "priceCurrency": "USD", 
-            "availability": "https://schema.org/InStock"    
-        } 
-    } 
-    </script> 
-</body> 
-</html>
+        </section>
+
+        <!-- System Requirements -->
+        <section class="bg-white rounded-2xl p-8 mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                System Requirements
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Technical Requirements</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>• Modern web browser (Chrome, Firefox, Safari, or Edge)</li>
+                        <li>• Stable internet connection</li>
+                        <li>• JavaScript enabled</li>
+                        <li>• Any modern operating system</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Recommended Setup</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>• Updated browser version</li>
+                        <li>• Audio output device or headphones</li>
+                        <li>• Minimum 4GB RAM</li>
+                        <li>• Touch-enabled device for mobile play</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Play More Games -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Play More Games
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Mahjongg Solitaire -->
+                <a href="/games/mahjongg.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
+                        <img src="https://placehold.co/400x225/007AFF/ffffff?text=Mahjongg" alt="Mahjongg Solitaire" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mahjongg Solitaire</h3>
+                        <p class="text-gray-600 text-sm">Match tiles and test your strategy in this classic Chinese puzzle game.</p>
+                    </div>
+                </a>
+
+                <!-- Wordle -->
+                <a href="/games/wordle.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
+                        <img src="https://placehold.co/400x225/34C759/ffffff?text=Wordle" alt="Wordle" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Wordle</h3>
+                        <p class="text-gray-600 text-sm">Guess the hidden word in six tries with this addictive word puzzle game.</p>
+                    </div>
+                </a>
+
+                <!-- 2048 -->
+                <a href="/games/2048.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
+                        <img src="https://placehold.co/400x225/FF3B30/ffffff?text=2048" alt="2048" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">2048</h3>
+                        <p class="text-gray-600 text-sm">Combine numbers to reach 2048 in this addictive mathematical puzzle game.</p>
+                    </div>
+                </a>
+
+                <!-- Solitr -->
+                <a href="/games/solitr.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
+                        <img src="https://placehold.co/400x225/5856D6/ffffff?text=Solitr" alt="Solitr" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Solitr</h3>
+                        <p class="text-gray-600 text-sm">Play the classic card game Solitaire with a modern twist and clean design.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600">
+            <div class="mb-4">
+                <p class="text-sm">Experience Sprunki Retake - Where Horror Meets Music Creation</p>
+            </div>
+            <p class="text-sm">© 2024 ZekaGames.org - All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html> 

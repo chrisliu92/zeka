@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Solitr online for free! Experience the classic card game Solitaire with a modern twist and clean design.">
+    <title>Solitr | ZekaGames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-dark: #1D1D1F;
+            --apple-light: #F5F5F7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--apple-light);
+            color: var(--apple-dark);
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <a href="/" class="text-blue-600 hover:text-blue-800 mb-4 inline-block">← Back to Home</a>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Solitr</h1>
+            <p class="text-xl text-gray-600">Play the classic Solitaire card game with a modern twist</p>
+        </header>
+
+        <!-- Game Container -->
+        <div class="w-full aspect-[16/9] bg-black rounded-2xl overflow-hidden shadow-2xl mb-8">
+            <iframe 
+                src="https://games.crazygames.com/en_US/solitr-com/index.html?v=1.324"
+                class="w-full h-full border-0"
+                allowfullscreen
+                loading="lazy"
+                title="Play Solitr">
+            </iframe>
+        </div>
+
+        <!-- Game Instructions -->
+        <div class="bg-white rounded-2xl p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">How to Play</h2>
+            <ul class="space-y-3 text-gray-700">
+                <li>• Build foundation piles up from Ace to King by suit</li>
+                <li>• Create tableau piles in descending order with alternating colors</li>
+                <li>• Move cards between piles to uncover face-down cards</li>
+                <li>• Use the stock pile when you run out of moves</li>
+                <li>• Win by moving all cards to the foundation piles</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 text-sm">
+            <p>© 2024 ZekaGames.org - All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html> 
