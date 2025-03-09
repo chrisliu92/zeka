@@ -1,17 +1,17 @@
 <!DOCTYPE html> 
 <html lang="en">  
 <head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Sprunki Warm Like Fire - An Enchanting Adventure Game</title> 
-    <meta name="description" content="Play Sprunki Warm Like Fire, an enchanting adventure where you navigate through fiery challenges. Experience this captivating online game for free at ZekaGames.">  
+    <meta name="description" content="Play Sprunki Warm Like Fire, an enchanting adventure where you navigate through fiery challenges. Experience this captivating online game for free at ZekaGames."> 
     <link rel="canonical" href="https://zekagames.org/sprunki-warm-like-fire">  
     <meta name="keywords" content="Sprunki Warm Like Fire, online games, adventure games, fire games, ZekaGames">
-    <script src="https://cdn.tailwindcss.com"></script>   
+    <script src="https://cdn.tailwindcss.com"></script>    
     <script>
         tailwind.config   = {
             theme: { 
-                extend: { 
+                extend: {  
                     colors: {
                         apple: { 
                             blue: '#007AFF',
@@ -20,29 +20,36 @@
                             purple: '#AF52DE',
                             yellow: '#FFCC00',
                             orange: '#FF9500', 
-                            dark: '#1C1C1E',
-                            gray: '#8E8E93', 
+                            dark: '#1C1C1E', 
+                            gray: '#8E8E93',
                             lightgray: '#F2F2F7' 
                         } 
                     } 
                 } 
             } 
-        }
+        } 
     </script> 
     <style type="text/css">
         @media (max-width: 640px) { 
             .game-container { 
                 height: 70vh; 
-            }
-        } 
-        /* 添加iframe样式控制 */ 
-        .game-iframe {
-            width: 100%; 
-            height: 100%; 
+            } 
+        }
+        /* Adjust iframe style to match GitHub example */ 
+        .game-iframe { 
+            width: 100%;
+            height: 100%;
             border: 0;
             overflow: hidden; 
         }
-    </style>
+        /* Adjust game container dimensions */ 
+        .game-container { 
+            width: 100%;
+            height: 600px; /* Fixed height, consistent with GitHub example */ 
+            max-width: 800px; /* Maximum width limit */ 
+            margin: 0 auto; /* Center display */ 
+        } 
+    </style> 
 </head> 
 <body class="bg-apple-lightgray text-apple-dark">
     <header class="bg-gradient-to-r from-apple-orange to-apple-red text-white p-4 md:p-6 shadow-md"> 
@@ -68,17 +75,18 @@
         <section id="game" class="my-8"> 
             <h2 class="text-2xl md:text-3xl font-bold mb-4 text-apple-blue">Play Sprunki Warm Like Fire</h2> 
             <div class="bg-white rounded-lg shadow-lg overflow-hidden"> 
-                <div class="game-container w-full h-screen max-h-[600px]">
-                    <!-- 修改后的iframe，添加了参数控制 -->
+                <!-- Modified game container class, removed h-screen and max-h properties -->
+                <div class="game-container"> 
+                    <!-- Modified iframe with parameter controls -->
                     <iframe  
-                        src="https://wowtbc.net/sprunkin/retake/index.html"   
+                        src="https://wowtbc.net/sprunkin/retake/index.html"    
                         class="game-iframe"
                         frameborder="0" 
-                        scrolling="no"
+                        scrolling="no" 
                         sandbox="allow-scripts allow-same-origin allow-popups allow-forms" 
                         allowfullscreen 
                         loading="lazy" 
-                        title="Sprunki Warm Like Fire Game">
+                        title="Sprunki Warm Like Fire Game"> 
                     </iframe>
                 </div> 
             </div> 
@@ -91,7 +99,7 @@
                     Share Game 
                 </button>
                 <button class="bg-apple-orange hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition shadow-md">  
-                    Favorite
+                    Favorite 
                 </button>
             </div>
         </section> 
@@ -115,8 +123,8 @@
                     <li>Complete each level by reaching the flame portal</li>
                 </ul> 
             </div> 
-        </section>
-         
+        </section> 
+        
         <section id="more-games" class="my-12"> 
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue">More Games</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -150,7 +158,7 @@
   
     <footer class="bg-apple-dark text-white py-8 px-4"> 
         <div class="container mx-auto"> 
-            <div class="grid md:grid-cols-3 gap-8"> 
+            <div class="grid md:grid-cols-3 gap-8">
                 <div> 
                     <h3 class="text-xl font-bold mb-4">ZekaGames</h3> 
                     <p class="text-apple-gray">Your destination for high-quality online games that are free to play and optimized for all devices.</p> 
@@ -158,25 +166,25 @@
                 <div> 
                     <h3 class="text-lg font-bold mb-4">Categories</h3> 
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Adventure</a></li> 
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Puzzle</a></li>  
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Action</a></li>
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">Strategy</a></li> 
+                        <li><a href="#" class="text-apple-gray hover:text-white transition">Adventure</a></li>
+                        <li><a href="#" class="text-apple-gray hover:text-white transition">Puzzle</a></li> 
+                        <li><a href="#" class="text-apple-gray hover:text-white transition">Action</a></li> 
+                        <li><a href="#" class="text-apple-gray hover:text-white transition">Strategy</a></li>
                     </ul> 
                 </div> 
                 <div>
                     <h3 class="text-lg font-bold mb-4">Quick Links</h3> 
-                    <ul class="space-y-2"> 
-                        <li><a href="#" class="text-apple-gray hover:text-white transition">About Us</a></li> 
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-apple-gray hover:text-white transition">About Us</a></li>
                         <li><a href="#" class="text-apple-gray hover:text-white transition">Privacy Policy</a></li>
                         <li><a href="#" class="text-apple-gray hover:text-white transition">Terms of Service</a></li>
                         <li><a href="#" class="text-apple-gray hover:text-white transition">Contact</a></li> 
                     </ul> 
                 </div> 
-            </div>  
-            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-apple-gray"> 
-                <p>&copy; 2025 ZekaGames. All rights reserved.</p> 
             </div> 
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-apple-gray"> 
+                <p>&copy; 2025 ZekaGames. All rights reserved.</p>
+            </div>
         </div> 
     </footer> 
   
@@ -184,49 +192,58 @@
         // Simple fullscreen function 
         function makeFullscreen() { 
             const gameContainer = document.querySelector('.game-container');  
-            const iframe = gameContainer.querySelector('iframe');   
-             
-            if (iframe) {  
-                if (iframe.requestFullscreen)   {  
-                    iframe.requestFullscreen();  
-                } else if (iframe.mozRequestFullScreen)   { // Firefox
+            const iframe = gameContainer.querySelector('iframe');    
+            
+            if (iframe) { 
+                if (iframe.requestFullscreen)   { 
+                    iframe.requestFullscreen();   
+                } else if (iframe.mozRequestFullScreen)   { // Firefox 
                     iframe.mozRequestFullScreen();    
-                } else if (iframe.webkitRequestFullscreen)   { // Chrome, Safari & Opera 
+                } else if (iframe.webkitRequestFullscreen)   { // Chrome, Safari & Opera
                     iframe.webkitRequestFullscreen();  
-                } else if (iframe.msRequestFullscreen)   { // IE/Edge 
-                    iframe.msRequestFullscreen();    
-                }
-            }
-        } 
+                } else if (iframe.msRequestFullscreen)   { // IE/Edge
+                    iframe.msRequestFullscreen();   
+                } 
+            } 
+        }
          
-        // 添加iframe加载完成后的处理
+        // Add handling for iframe load completion 
         document.addEventListener('DOMContentLoaded',  function() { 
             const iframe = document.querySelector('.game-iframe'); 
-            iframe.onload  = function() {
-                // 可以在这里添加iframe加载完成后的处理逻辑 
+            iframe.onload  = function() { 
+                // You can add processing logic here after the iframe loads 
                 console.log('Game  iframe loaded successfully'); 
-            }; 
+                 
+                // Try to adjust iframe content 
+                try {
+                    // This part of the code may fail due to cross-origin restrictions 
+                    const iframeDocument = iframe.contentDocument  || iframe.contentWindow.document; 
+                    // Here you can try to hide unwanted elements in the iframe
+                } catch (e) {
+                    console.log('Cannot  access iframe content due to same-origin policy'); 
+                } 
+            };
         });
     </script> 
   
     <!-- JSON-LD structured data for SEO --> 
-    <script type="application/ld+json">  
+    <script type="application/ld+json"> 
     {
         "@context": "https://schema.org",  
         "@type": "VideoGame", 
-        "name": "Sprunki Warm Like Fire", 
+        "name": "Sprunki Warm Like Fire",
         "description": "An enchanting adventure game that takes players through a world where fire is not just an element, but a companion.", 
         "genre": ["Adventure", "Puzzle", "Action"],
-        "playMode": "SinglePlayer", 
+        "playMode": "SinglePlayer",
         "applicationCategory": "Game", 
-        "url": "https://zekagames.org/sprunki-warm-like-fire",   
+        "url": "https://zekagames.org/sprunki-warm-like-fire",    
         "offers": {
-            "@type": "Offer",  
+            "@type": "Offer", 
             "price": "0", 
             "priceCurrency": "USD", 
-            "availability": "https://schema.org/InStock"   
+            "availability": "https://schema.org/InStock"    
         } 
     } 
     </script> 
 </body> 
-</html> 
+</html>
