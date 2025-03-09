@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- 主页 -->
+    <url>
+        <loc>https://zekagames.org/</loc>
+        <lastmod>2024-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 麻将游戏页面 -->
+    <url>
+        <loc>https://zekagames.org/games/mahjongg.html</loc>
+        <lastmod>2024-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Wordle游戏页面 -->
+    <url>
+        <loc>https://zekagames.org/games/wordle.html</loc>
+        <lastmod>2024-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 2048游戏页面 -->
+    <url>
+        <loc>https://zekagames.org/games/2048.html</loc>
+        <lastmod>2024-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Solitr游戏页面 -->
+    <url>
+        <loc>https://zekagames.org/games/solitr.html</loc>
+        <lastmod>2024-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset> 
