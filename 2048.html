@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F7W7Q2WS3N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-F7W7Q2WS3N');
+    </script>
+    <meta name="description" content="Play 2048 online for free! Combine numbers to reach 2048 in this addictive mathematical puzzle game.">
+    <title>2048 | ZekaGames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-dark: #1D1D1F;
+            --apple-light: #F5F5F7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--apple-light);
+            color: var(--apple-dark);
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <a href="/games/2048.html" class="text-blue-600 hover:text-blue-800 mb-4 inline-block">← Back to Home</a>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">2048</h1>
+            <p class="text-xl text-gray-600">Combine numbers to reach 2048 in this addictive puzzle game</p>
+        </header>
+
+        <!-- Game Container -->
+        <div class="w-full aspect-[16/9] bg-black rounded-2xl overflow-hidden shadow-2xl mb-8">
+            <iframe 
+                src="https://games.crazygames.com/en_US/2048/index.html?v=1.324"
+                class="w-full h-full border-0"
+                allowfullscreen
+                loading="lazy"
+                title="Play 2048">
+            </iframe>
+        </div>
+
+        <!-- Game Instructions -->
+        <div class="bg-white rounded-2xl p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">How to Play</h2>
+            <ul class="space-y-3 text-gray-700">
+                <li>• Use arrow keys to move tiles</li>
+                <li>• When two tiles with the same number touch, they merge into one</li>
+                <li>• Add numbers together to reach 2048</li>
+                <li>• Plan your moves carefully to achieve higher scores</li>
+                <li>• Game ends when no more moves are possible</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 text-sm">
+            <p>© 2024 ZekaGames.org - All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html> 
