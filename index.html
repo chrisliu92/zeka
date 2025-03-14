@@ -20,6 +20,7 @@
     <meta property="og:url" content="https://zekagames.org">
     <title>Sprunki Retake - Play Free Online Music Creation Game | ZekaGames</title>
     <link rel="canonical" href="https://zekagames.org" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -28,181 +29,297 @@
             --apple-green: #34C759;
             --apple-dark: #1D1D1F;
             --apple-light: #F5F5F7;
+            --sprunki-orange: #FF6B00;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: var(--apple-light);
             color: var(--apple-dark);
         }
+        .logo-text {
+            background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8F00FF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+        .game-icon {
+            font-size: 48px;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f4f6;
+            color: #4B5563;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.2s ease-in-out;
+        }
+        a:hover .game-icon {
+            background-color: #E5E7EB;
+            transform: scale(1.05);
+        }
+        /* 添加遮罩层样式 */
+        .game-container {
+            position: relative;
+        }
+        .game-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: black;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <!-- Header Section -->
-        <header class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Sprunki Retake
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Experience the unique blend of horror and music creation in this innovative browser-based game. Create haunting melodies, mix eerie beats, and join our creative community.
-            </p>
-        </header>
-
-        <!-- Game Section -->
-        <section class="mb-16 relative">
-            <div class="w-full aspect-[16/9] bg-black rounded-2xl overflow-hidden shadow-2xl relative">
-                <iframe 
-                    src="https://wowtbc.net/sprunkin/retake/index.html"
-                    class="w-full h-full border-0"
-                    allowfullscreen
-                    loading="lazy"
-                    title="Play Sprunki Retake Online">
-                </iframe>
-                <div class="absolute bottom-0 left-0 right-0 h-12 bg-gray-900 z-10"></div>
-            </div>
-        </section>
-
-        <!-- Features Grid -->
-        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div class="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                    Immersive Horror Theme
-                </h2>
-                <p class="text-gray-700">
-                    Dive into a unique atmosphere where horror meets creativity. Create spine-chilling soundtracks and explore dark musical territories.
-                </p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                    Multiple Game Phases
-                </h2>
-                <p class="text-gray-700">
-                    Progress through different phases, each offering unique sounds and visual themes. Unlock new content as you master the game.
-                </p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                    Community Creation
-                </h2>
-                <p class="text-gray-700">
-                    Share your creations, get inspired by others, and participate in regular community events and challenges.
-                </p>
-            </div>
-        </section>
-
-        <!-- How to Play -->
-        <section class="bg-white rounded-2xl p-8 mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">
-                How to Play
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Getting Started</h3>
-                    <ul class="space-y-3 text-gray-700">
-                        <li>• No download required - play instantly in your browser</li>
-                        <li>• Intuitive drag-and-drop interface</li>
-                        <li>• Create unique horror-themed music</li>
-                        <li>• Save and share your creations</li>
-                    </ul>
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Left side - Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl logo-text">SPRUNKI</span>
+                    </a>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Advanced Features</h3>
-                    <ul class="space-y-3 text-gray-700">
-                        <li>• Mix different sound elements</li>
-                        <li>• Unlock special characters and effects</li>
-                        <li>• Participate in community challenges</li>
-                        <li>• Create custom sound patterns</li>
-                    </ul>
+
+                <!-- Right side - Navigation -->
+                <div class="flex items-center space-x-8">
+                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Hot Games</a>
+                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">New Games</a>
+                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Sprunki Games</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <!-- System Requirements -->
-        <section class="bg-white rounded-2xl p-8 mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">
-                System Requirements
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Technical Requirements</h3>
-                    <ul class="space-y-3 text-gray-700">
-                        <li>• Modern web browser (Chrome, Firefox, Safari, or Edge)</li>
-                        <li>• Stable internet connection</li>
-                        <li>• JavaScript enabled</li>
-                        <li>• Any modern operating system</li>
-                    </ul>
+    <!-- Main Content with top padding to account for fixed nav -->
+    <div class="pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Game Section -->
+            <section class="mb-16 relative">
+                <div class="w-full aspect-[16/9] bg-black rounded-2xl overflow-hidden shadow-2xl relative game-container">
+                    <iframe 
+                        src="https://wowtbc.net/sprunkin/retake/index.html?embed=true&noBranding=true&noSprunkin=true&hideUI=true"
+                        class="w-full h-full border-0"
+                        allowfullscreen
+                        allow="autoplay; fullscreen"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals"
+                        loading="lazy"
+                        scrolling="no"
+                        frameborder="0"
+                        title="Play Sprunki Retake Online">
+                    </iframe>
+                    <div class="game-overlay"></div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Recommended Setup</h3>
-                    <ul class="space-y-3 text-gray-700">
-                        <li>• Updated browser version</li>
-                        <li>• Audio output device or headphones</li>
-                        <li>• Minimum 4GB RAM</li>
-                        <li>• Touch-enabled device for mobile play</li>
-                    </ul>
+            </section>
+
+            <!-- Play More Games Section -->
+            <section class="mb-16">
+                <div class="relative">
+                    <div class="absolute -inset-1">
+                        <div class="w-full h-full mx-auto opacity-30 blur-lg filter bg-gradient-to-r from-green-300 via-green-200 to-green-400"></div>
+                    </div>
+                    <div class="relative bg-white rounded-3xl p-8 mb-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+                            Play Other Games
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Wordle -->
+                            <div class="group">
+                                <a href="games/wordle.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/wordle.png" alt="Wordle" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Wordle</h3>
+                                    <p class="text-sm text-gray-600">Guess the hidden word in six tries.</p>
+                                </a>
+                            </div>
+
+                            <!-- Mahjongg -->
+                            <div class="group">
+                                <a href="games/mahjongg.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/mahjongg.png" alt="Mahjongg" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mahjongg</h3>
+                                    <p class="text-sm text-gray-600">Match tiles and test your strategy.</p>
+                                </a>
+                            </div>
+
+                            <!-- Solitr -->
+                            <div class="group">
+                                <a href="games/solitr.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/solitr.png" alt="Solitr" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Solitr</h3>
+                                    <p class="text-sm text-gray-600">Play the classic Solitaire card game.</p>
+                                </a>
+                            </div>
+
+                            <!-- 2048 -->
+                            <div class="group">
+                                <a href="games/2048.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/2048.png" alt="2048" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">2048</h3>
+                                    <p class="text-sm text-gray-600">Play the classic number puzzle game.</p>
+                                </a>
+                            </div>
+
+                          
+                            <!-- Sprunki Retake -->
+                            <div class="group">
+                                <a href="index.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/Sprunki-retake.png" alt="Sprunki Retake" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sprunki Retake</h3>
+                                    <p class="text-sm text-gray-600">Experience the thrill of Sprunki Retake Online for free, an innovative horror-themed music creation game.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Play More Games -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
-                Play More Games
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Mahjongg Solitaire -->
-                <a href="/games/mahjongg.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
-                        <img src="https://placehold.co/400x225/007AFF/ffffff?text=Mahjongg" alt="Mahjongg Solitaire" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mahjongg Solitaire</h3>
-                        <p class="text-gray-600 text-sm">Match tiles and test your strategy in this classic Chinese puzzle game.</p>
-                    </div>
-                </a>
+            <!-- Game Introduction -->
+            <section class="mb-16">
+                <div class="bg-white rounded-2xl p-8">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-6">
+                        Sprunki Incredibox – Experience the Creative Fan-Made Incredibox Mod
+                    </h1>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Welcome to Sprunki Incredibox, a thrilling fan-made mod inspired by the beloved Incredibox game. Immerse yourself in a vibrant world of creativity and music mixing that enhances the original experience. At zekagames.org, we invite music enthusiasts and gamers to explore our unique features and captivating gameplay that take the Incredibox adventure to the next level. Join us now and unleash your musical creativity!
+                    </p>
+                    <div class="flex space-x-6 text-lg">
+                        <a href="#how-to-play" class="text-blue-600 hover:text-blue-800">How to play</a>
+                        <span class="text-gray-300">|</span>
+                        <a href="#faq" class="text-blue-600 hover:text-blue-800">FAQ</a>
+                        <span class="text-gray-300">|</span>
+                        <a href="#languages" class="text-blue-600 hover:text-blue-800">Languages</a>
+                      </div>
+                </div>
+            </section>
 
-                <!-- Wordle -->
-                <a href="/games/wordle.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
-                        <img src="https://placehold.co/400x225/34C759/ffffff?text=Wordle" alt="Wordle" class="w-full h-full object-cover">
+            <!-- How to Play Section -->
+            <section id="how-to-play" class="mb-16">
+                <div class="bg-white rounded-2xl p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">How to Play the Sprunki Incredibox Game: A Simple Guide</h2>
+                    <div class="text-lg text-gray-700 mb-6">
+                        <p>Learn how to enjoy the Sprunki Incredibox game with this simple guide! Here's how to get started:</p>
+                        <p>1. Select Your Sounds: Choose from a diverse range of beats, effects, melodies, and voices to kick off your musical journey.</p>
+                        <p>2. Mix and Match: Drag and drop your selected sounds onto various characters to create your unique track.</p>
+                        <p>3. Experiment Freely: Try out different combinations to discover how your sounds blend together and craft your own distinct music.</p>
+                        <p>4. Share Your Creation: Once you're satisfied with your mix, share it with friends or save it for later enjoyment.</p>
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Wordle</h3>
-                        <p class="text-gray-600 text-sm">Guess the hidden word in six tries with this addictive word puzzle game.</p>
-                    </div>
-                </a>
+                </div>
+            </section>
 
-                <!-- 2048 -->
-                <a href="/games/2048.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
-                        <img src="https://placehold.co/400x225/FF3B30/ffffff?text=2048" alt="2048" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">2048</h3>
-                        <p class="text-gray-600 text-sm">Combine numbers to reach 2048 in this addictive mathematical puzzle game.</p>
-                    </div>
-                </a>
+            <!-- FAQ Section -->
+            <section id="faq" class="mb-16">
+                <div class="bg-white rounded-2xl p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">FAQs for the Sprunki Incredibox Game</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">What is the Sprunki Mod?</h3>
+                            <p class="text-gray-700">The Sprunki Mod is a fan-created version of the Sprunki Incredibox game, featuring original characters, sounds, and themes that enhance your music-making experience.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">What is the Sprunki Incredibox game?</h3>
+                            <p class="text-gray-700">Sprunki Incredibox is a modified edition of the original Incredibox, allowing players to craft custom music tracks using imaginative characters and unique soundscapes.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Where can I download the Sprunki Incredibox game?</h3>
+                            <p class="text-gray-700">You can download the Sprunki Incredibox game from its official website, the Google Play Store, the Apple App Store, or as an APK file for Android devices.</p>
+                        </div>                       
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Can I create my own characters in Sprunki Incredibox?</h3>
+                            <p class="text-gray-700">While direct character creation isn't supported, fans often design original characters inspired by Sprunki Incredibox, using art tools and community resources to showcase their work.</p>
+                       </div>                          
+                       <div>
+                            <h3 class="text-xl font-semibold mb-2">Who are the main characters in the Sprunki Incredibox game?</h3>
+                            <p class="text-gray-700">Key characters include Oren (Orange), Clukr (Silver), Gray, Garnold (Gold), Pinki, and others, each contributing unique sounds to your musical mixes.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Where can I play Sprunki Mods online?</h3>
+                            <p class="text-gray-700">Sprunki Mods can be played online on various gaming platforms, including Zekagames.org, official mod websites, and community-hosted servers.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">What makes Sprunki Mods special?</h3>
+                            <p class="text-gray-700">Sprunki Mods offer creative variations of the game, featuring custom themes, horror editions, and visually engaging designs.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">What are Sprunki Phases?</h3>
+                            <p class="text-gray-700">Sprunki Phases are thematic expansions within the game that introduce new characters, sound effects, and gameplay challenges. Popular phases include Phase 1 to 20, as well as Phase 69 and Phase 999.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Are there horror-themed mods available?</h3>
+                            <p class="text-gray-700">Yes, several horror-themed mods, such as the Sprunki Horror Mod and the Sprunki Phase series, incorporate spooky elements into the gameplay.</p>
+                          </div>
+                </div>
+            </section>
 
-                <!-- Solitr -->
-                <a href="/games/solitr.html" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="aspect-w-16 aspect-h-9 bg-gray-100">
-                        <img src="https://placehold.co/400x225/5856D6/ffffff?text=Solitr" alt="Solitr" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Solitr</h3>
-                        <p class="text-gray-600 text-sm">Play the classic card game Solitaire with a modern twist and clean design.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+           
+            <!-- Features Grid -->
+            <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        Simple Drag-and-Drop Mechanics
+                    </h2>
+                    <p class="text-gray-700">
+                       Easily create catchy beats and melodies by dragging and dropping icons onto the beatboxers.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        User-Friendly Interface
+                    </h2>
+                    <p class="text-gray-700">
+                         The intuitive design allows anyone, regardless of musical experience, to start making music right away.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                       Limitless Creativity
+                    </h2>
+                    <p class="text-gray-700">
+                        Explore various sound combinations to develop your unique musical style.
+                    </p>
+                </div>
+            
+            </section>
 
-        <!-- Footer -->
-        <footer class="text-center text-gray-600">
-            <div class="mb-4">
-                <p class="text-sm">Experience Sprunki Retake - Where Horror Meets Music Creation</p>
-            </div>
-            <p class="text-sm">© 2024 ZekaGames.org - All rights reserved</p>
-        </footer>
+           
+            <!-- Languages Section -->
+            <section id="languages" class="mb-16">
+                <div class="bg-white rounded-2xl p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Available Languages</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Español</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-600">
+                <div class="mb-4">
+                    <p class="text-sm">Experience Sprunki Incredibox Game - Where Horror Meets Music Creation</p>
+                </div>
+                <p class="text-sm">© 2025 ZekaGames.org - All rights reserved</p>
+            </footer>
+        </div>
     </div>
 </body>
 </html> 
