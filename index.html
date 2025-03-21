@@ -24,6 +24,9 @@
     <meta property="og:url" content="https://zekagames.org">
     <title>Sprunki Incredibox - Play Free Online Music Creation Game | ZekaGames</title>
     <link rel="canonical" href="https://zekagames.org" />
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0iI0ZGQTcyNiIgLz48ZyBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48bGluZSB4MT0iNTAiIHkxPSIwIiB4Mj0iNTAiIHkyPSIxNSIgLz48bGluZSB4MT0iNTAiIHkxPSI4NSIgeDI9IjUwIiB5Mj0iMTAwIiAvPjxsaW5lIHgxPSIwIiB5MT0iNTAiIHgyPSIxNSIgeTI9IjUwIiAvPjxsaW5lIHgxPSI4NSIgeTE9IjUwIiB4Mj0iMTAwIiB5Mj0iNTAiIC8+PGxpbmUgeDE9IjE3IiB5MT0iMTciIHgyPSIyOCIgeTI9IjI4IiAvPjxsaW5lIHgxPSIxNyIgeTE9IjgzIiB4Mj0iMjgiIHkyPSI3MiIgLz48bGluZSB4MT0iODMiIHkxPSIxNyIgeDI9IjcyIiB5Mj0iMjgiIC8+PGxpbmUgeDE9IjgzIiB5MT0iODMiIHgyPSI3MiIgeTI9IjcyIiAvPjwvZz48cGF0aCBkPSJNMzAsNTUgUTUwLDc1IDcwLDU1IiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPjxjaXJjbGUgY3g9IjM1IiBjeT0iNDAiIHI9IjUiIGZpbGw9IiNGRkYiIC8+PGNpcmNsZSBjeD0iNjUiIGN5PSI0MCIgcj0iNSIgZmlsbD0iI0ZGRiIgLz48L3N2Zz4=">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0iI0ZGQTcyNiIgLz48ZyBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48bGluZSB4MT0iNTAiIHkxPSIwIiB4Mj0iNTAiIHkyPSIxNSIgLz48bGluZSB4MT0iNTAiIHkxPSI4NSIgeDI9IjUwIiB5Mj0iMTAwIiAvPjxsaW5lIHgxPSIwIiB5MT0iNTAiIHgyPSIxNSIgeTI9IjUwIiAvPjxsaW5lIHgxPSI4NSIgeTE9IjUwIiB4Mj0iMTAwIiB5Mj0iNTAiIC8+PGxpbmUgeDE9IjE3IiB5MT0iMTciIHgyPSIyOCIgeTI9IjI4IiAvPjxsaW5lIHgxPSIxNyIgeTE9IjgzIiB4Mj0iMjgiIHkyPSI3MiIgLz48bGluZSB4MT0iODMiIHkxPSIxNyIgeDI9IjcyIiB5Mj0iMjgiIC8+PGxpbmUgeDE9IjgzIiB5MT0iODMiIHgyPSI3MiIgeTI9IjcyIiAvPjwvZz48cGF0aCBkPSJNMzAsNTUgUTUwLDc1IDcwLDU1IiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPjxjaXJjbGUgY3g9IjM1IiBjeT0iNDAiIHI9IjUiIGZpbGw9IiNGRkYiIC8+PGNpcmNsZSBjeD0iNjUiIGN5PSI0MCIgcj0iNSIgZmlsbD0iI0ZGRiIgLz48L3N2Zz4=">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -86,16 +89,44 @@
             <div class="flex justify-between h-16">
                 <!-- Left side - Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="/" class="flex items-center">
-                        <span class="text-2xl logo-text">SPRUNKI</span>
+                    <a href="/" class="flex items-center space-x-2">
+                        <!-- SVG Sun Smile Logo -->
+                        <svg class="h-12 w-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Sun Background Circle -->
+                            <circle cx="50" cy="50" r="40" fill="url(#sunGradient)" />
+                            <!-- Sun Rays -->
+                            <g stroke="#FFA726" stroke-width="4" stroke-linecap="round">
+                                <line x1="50" y1="0" x2="50" y2="15" />
+                                <line x1="50" y1="85" x2="50" y2="100" />
+                                <line x1="0" y1="50" x2="15" y2="50" />
+                                <line x1="85" y1="50" x2="100" y2="50" />
+                                <line x1="17" y1="17" x2="28" y2="28" />
+                                <line x1="17" y1="83" x2="28" y2="72" />
+                                <line x1="83" y1="17" x2="72" y2="28" />
+                                <line x1="83" y1="83" x2="72" y2="72" />
+                            </g>
+                            <!-- Smile -->
+                            <path d="M30,55 Q50,75 70,55" stroke="#FFF" stroke-width="4" fill="none" stroke-linecap="round" />
+                            <!-- Eyes -->
+                            <circle cx="35" cy="40" r="5" fill="#FFF" />
+                            <circle cx="65" cy="40" r="5" fill="#FFF" />
+                            <!-- Gradient Definition -->
+                            <defs>
+                                <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFD54F" />
+                                    <stop offset="100%" stop-color="#FF9800" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="text-2xl logo-text">ZEKAGAMES</span>
                     </a>
                 </div>
 
                 <!-- Right side - Navigation -->
                 <div class="flex items-center space-x-8">
-                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Hot Games</a>
-                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">New Games</a>
-                    <a href="#index.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Sprunki Games</a>
+                    <a href="hot-games.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Hot Games</a>
+                    <a href="new-games.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">New Games</a>
+                    <a href="sprunki-games.html" class="text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Sprunki Games</a>
                 </div>
             </div>
         </div>
@@ -187,16 +218,30 @@
                                 </a>
                             </div>
 
-                        
-                            <!-- Sprunki Incredibox -->
+
+                           <!-- Sprunki Incredibox -->
                             <div class="group">
-                                <a href="index.html" class="block">
+                                <a href="sprunki-incredibox.html" class="block">
                                     <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
-                                        <img src="images/games/Sprunki-retake.png" alt="Sprunki Retake" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <img src="images/games/Sprunki-retake.png" alt="Sprunki Incredibox" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-2">Sprunki Incredibox</h3>
                                     <p class="text-sm text-gray-600">Experience the thrill of Sprunki Incredibox Online for free, an innovative horror-themed music creation game.</p>
+                                </a>
+                            </div>
+
+                       
+
+                            <!-- Sprunki Phase 4 -->
+                            <div class="group">
+                                <a href="games/sprunki-phase-4.html" class="block">
+                                    <div class="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg">
+                                        <img src="images/games/Sprunki-Phase-4.png" alt="Sprunki Phase 4" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sprunki Phase 4</h3>
+                                    <p class="text-sm text-gray-600">Create your own unique music by combining animated characters in this fun and engaging rhythm game.</p>
                                 </a>
                             </div>
                         </div>
@@ -218,8 +263,7 @@
                         <a href="#how-to-play" class="text-blue-600 hover:text-blue-800">How to play</a>
                         <span class="text-gray-300">|</span>
                         <a href="#faq" class="text-blue-600 hover:text-blue-800">FAQ</a>
-                        <span class="text-gray-300">|</span>
-                        <a href="#languages" class="text-blue-600 hover:text-blue-800">Languages</a>
+                   
                       </div>
                 </div>
             </section>
@@ -228,12 +272,16 @@
             <section id="how-to-play" class="mb-16">
                 <div class="bg-white rounded-2xl p-8">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">How to Play the Sprunki Retake Game: A Simple Guide</h2>
-                    <div class="text-lg text-gray-700 mb-6">
+                    <div class="text-lg text-gray-700 mb-6 space-y-4">
                         <p>Learn how to enjoy the Sprunki Retake game with this simple guide! Here's how to get started:</p>
-                        <p>1. Select Your Sounds: Choose from a diverse range of beats, effects, melodies, and voices to kick off your musical journey.</p>
-                        <p>2. Mix and Match: Drag and drop your selected sounds onto various characters to create your unique track.</p>
-                        <p>3. Experiment Freely: Try out different combinations to discover how your sounds blend together and craft your own distinct music.</p>
-                        <p>4. Share Your Creation: Once you're satisfied with your mix, share it with friends or save it for later enjoyment.</p>
+                        
+                        <p>1. <strong>Select Your Sounds</strong>: Choose from a diverse range of beats, effects, melodies, and voices to kick off your musical journey.</p>
+                        
+                        <p>2. <strong>Mix and Match</strong>: Drag and drop your selected sounds onto various characters to create your unique track.</p>
+                        
+                        <p>3. <strong>Experiment Freely</strong>: Try out different combinations to discover how your sounds blend together and craft your own distinct music.</p>
+                        
+                        <p>4. <strong>Share Your Creation</strong>: Once you're satisfied with your mix, share it with friends or save it for later enjoyment.</p>
                     </div>
                 </div>
             </section>
@@ -313,16 +361,7 @@
             </section>
 
            
-            <!-- Languages Section -->
-            <section id="languages" class="mb-16">
-                <div class="bg-white rounded-2xl p-8">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Available Languages</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <a href="#" class="text-blue-600 hover:text-blue-800">Español</a>
-                    </div>
-                </div>
-            </section>
-
+          
             <!-- Footer -->
             <footer class="text-center text-gray-600">
                 <div class="mb-4">
